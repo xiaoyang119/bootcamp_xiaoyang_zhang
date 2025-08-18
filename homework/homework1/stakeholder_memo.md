@@ -1,27 +1,33 @@
 # Project Title
 **Stage:** Problem Framing & Scoping (Stage 01)
 ## Problem Statement
-Small business loan approvals often rely on outdated or subjective criteria, leading to high default rates or missed opportunities. This project analyzes historical loan data (e.g., financial statements, repayment history) to build a predictive model that assesses credit risk objectively, enabling lenders to balance risk and accessibility.
+This project aims to analyze historical trends and predict future movements of Apple Inc.'s (AAPL) stock price to support investment decisions. The core problem is the uncertainty in financial markets, where stakeholders need data-driven insights to assess whether AAPL is a viable investment. By leveraging time-series forecasting and macroeconomic indicators (e.g., interest rates, tech sector performance), the model will provide actionable predictions to mitigate investment risks.
 ## Stakeholder & User
-Primary Decision-Maker: Bank Loan Officers (use model outputs to approve/reject loans).
+Primary Stakeholder: Portfolio managers or individual investors deciding whether to buy/hold/sell AAPL shares.
 
-End User: Small Business Applicants (benefit from fairer/faster decisions).
+End User: Financial analysts who interpret model outputs (e.g., predicted price ranges, risk metrics) to make recommendations.
 
-Compliance Stakeholder: Regulatory Body (ensure model meets fairness standards).
+Context: Decisions are time-sensitive, aligned with quarterly earnings reports or market shocks (e.g., supply chain disruptions).
 ## Useful Answer & Decision
-Analysis Type: Predictive (default probability) + Prescriptive (risk-based loan terms).
+Framing: Predictive (forecasting future prices) and Descriptive (identifying historical patterns).
 
-Deliverable:
+Deliverable: A Jupyter Notebook with:
 
-A credit risk scoring model (Python notebook).
+Time-series forecasts (e.g., ARIMA, LSTM) for AAPL stock prices.
 
-A fairness audit report (disparate impact analysis by demographic groups).
+Risk-reward metrics (e.g., Sharpe Ratio, volatility bands).
+
+A summary slide (/docs/framing_slide.pdf) explaining key trends to non-technical stakeholders.
 ## Assumptions & Constraints
-Data: Assumes access to anonymized loan applications (e.g., LendingClub dataset).
+Data Availability: Reliable historical prices (Yahoo Finance API) and macroeconomic data (FRED).
 
-Legal: Model must comply with anti-discrimination laws (e.g., ECOA).
+Compliance: Avoid insider information; use only public data.
+
+Latency: Model updates weekly; not for high-frequency trading.
 ## Known Unknowns / Risks
-How macroeconomic trends (e.g., inflation) affect default rates—requires external data integration.
+Black swan events (e.g., geopolitical crises) may disrupt predictions.
+
+Correlation vs. causation: Macroeconomic factors may not directly drive AAPL’s price.
 ## Lifecycle Mapping
 | Goal | Stage & Deliverable |
 |------|---------------------|
